@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="/jquery-3.4.1.min.js"></script>
+  <style>
+  html, body {
+    font-size: 12px;
+  }
+  </style>
+</head>
+
+<body>
+  <table style="width:100%;" border="1">
+    <thead>
+      <tr>
+        <th>파트너ID</th>
+        <th>파트너이름</th>
+        <th>생성일</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#rows}}
+      <tr>
+        <td>{{PTR_ID}}</td>
+        <td>{{PTR_NM}}</td>
+        <td>{{CRT_DT}}</td>
+      </tr>
+      {{/rows}}
+    </tbody>
+  </table>
+</body>
+</html>

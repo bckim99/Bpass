@@ -1,0 +1,9 @@
+applications:
+- name: com.bd.liivpass
+  buildpacks:
+    - nodejs_buildpack
+  health-check-type: process
+  instances: 1
+  memory: 256M
+  disk_quota: 1024M
+  command: npm start

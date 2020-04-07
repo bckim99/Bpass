@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="/jquery-3.4.1.min.js"></script>
+  <style>
+  html, body {
+    font-size: 12px;
+  }
+  </style>
+</head>
+
+<body>
+  <table style="width:100%;" border="1">
+    <thead>
+      <tr>
+        <th>PVR ID</th>
+        <th>파트너ID</th>
+        <th>파트너유저ID</th>
+        <th>파트너서비스키</th>
+        <th>통신사TX ID</th>
+        <th>REQ</th>
+        <th>RES</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#rows}}
+      <tr>
+        <td>{{PVR_ID}}</td>
+        <td>{{PTR_ID}}</td>
+        <td>{{COR_ID}}</td>
+        <td>{{SVC_KEY}}</td>
+        <td>{{TX_ID}}</td>
+        <td>{{REQ_BODY}}</td>
+        <td>{{RES_BODY}}</td>
+        <td>{{CRT_DT}}</td>
+      </tr>
+      {{/rows}}
+    </tbody>
+  </table>
+</body>
+</html>
