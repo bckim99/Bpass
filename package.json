@@ -8,7 +8,7 @@
     "axios": "^0.19.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "file-stream-rotator": "^0.5.5",
     "hogan-express": "^0.5.2",
     "mariadb": "^2.1.4",
